@@ -55,70 +55,82 @@ minetest.register_craftitem("moretrees:coconut_milk", {
 	inventory_image = "moretrees_coconut_milk_inv.png",
 	wield_image = "moretrees_coconut_milk.png",
 	on_use = minetest.item_eat(2),
+	spoil=3,
 })
 
 minetest.register_craftitem("moretrees:raw_coconut", {
 	description = S("Raw Coconut"),
 	inventory_image = "moretrees_raw_coconut.png",
 	on_use = minetest.item_eat(4),
+	spoil=8,
 })
 
 minetest.register_craftitem("moretrees:date", {
 	description = S("Date"),
 	inventory_image = "moretrees_date.png",
 	on_use = minetest.item_eat(1),
+	spoil=60,
 })
 
 minetest.register_craftitem("moretrees:date_nut_snack", {
 	description = S("Date & nut snack"),
 	inventory_image = "moretrees_date_nut_snack.png",
 	on_use = minetest.item_eat(4),
+	spoil=60,
 })
 
 minetest.register_craftitem("moretrees:date_nut_batter", {
 	description = S("Date-nut cake batter"),
 	inventory_image = "moretrees_date_nut_batter.png",
+	spoil=15,
 })
 
 minetest.register_craftitem("moretrees:date_nut_cake", {
 	description = S("Date-nut cake"),
 	inventory_image = "moretrees_date_nut_cake.png",
 	on_use = minetest.item_eat(32),
+	spoil=3,
 })
 
 minetest.register_craftitem("moretrees:date_nut_bar", {
 	description = S("Date-nut energy bar"),
 	inventory_image = "moretrees_date_nut_bar.png",
 	on_use = minetest.item_eat(4),
+	spoil=4,
 })
 
 minetest.register_craftitem("moretrees:acorn_muffin_batter", {
 	description = S("Acorn Muffin batter"),
 	inventory_image = "moretrees_acorn_muffin_batter.png",
+	spoil=2,
 })
 
 minetest.register_craftitem("moretrees:acorn_muffin", {
 	description = S("Acorn Muffin"),
 	inventory_image = "moretrees_acorn_muffin.png",
 	on_use = minetest.item_eat(4),
+	spoil=3,
 })
 
 minetest.register_craftitem("moretrees:spruce_nuts", {
 	description = S("Roasted Spruce Cone Nuts"),
 	inventory_image = "moretrees_spruce_nuts.png",
 	on_use = minetest.item_eat(1),
+	spoil=60,
 })
 
 minetest.register_craftitem("moretrees:cedar_nuts", {
 	description = S("Roasted Cedar Cone Nuts"),
 	inventory_image = "moretrees_cedar_nuts.png",
 	on_use = minetest.item_eat(1),
+	spoil=60,
 })
 
 minetest.register_craftitem("moretrees:fir_nuts", {
 	description = S("Roasted Fir Cone Nuts"),
 	inventory_image = "moretrees_fir_nuts.png",
 	on_use = minetest.item_eat(1),
+	spoil=60,
 })
 
 for i in ipairs(moretrees.cutting_tools) do
